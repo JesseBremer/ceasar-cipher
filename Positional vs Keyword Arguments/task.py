@@ -9,9 +9,31 @@
 #
 # life_in_weeks(32)
 
-def greet(name, location):
-    print(f"Hello {name}")
-    print(f"You live in {location}")
+# def greet(name, location):
+#     print(f"Hello {name}")
+#     print(f"You live in {location}")
+#
+#
+# greet(location="Ottawa", name="Jack Bauer")
+
+def calculate_love_score(name_1, name_2):
+    check_true = "true"
+    check_love = "love"
+    true_score = 0
+    love_score = 0
+
+    couple = name_1.lower() + name_2.lower()
+
+    for char in couple:
+        if char in check_true:
+            true_score += 1
+        if char in check_love:
+            love_score += 1
+
+    true_love_score = str(true_score) + str(love_score)
+    print(true_love_score)
+
+    return true_love_score
 
 
-greet(location="Ottawa", name="Jack Bauer")
+calculate_love_score("Kanye West", "Kim Kardashian")

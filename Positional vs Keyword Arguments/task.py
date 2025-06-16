@@ -14,4 +14,4 @@ def greet(name, location):
     print(f"You live in {location}")
 
 
-greet("Jack Bauer", "Ottawa")
+greet(location="Ottawa", name="Jack Bauer")
